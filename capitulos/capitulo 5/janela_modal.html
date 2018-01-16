@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Arquivo Padrão</title>
+	<link href="C:xampp/htdocs/livro_majour/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />	
+</head>
+<body>
+	<div class="container">
+		<button type="button" class="btn btn-primary btl-lg" data-toggle="modal" data-target="modalLogin">Abrir Janela Modal</button>
+		<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Área Administrativa</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Conteúdo Janela Modal-->
+						Olá
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" datatarget="#modalLogin">Abrir janela modal</button>
+		<div  class="modal fade" id="modalLogin" tabindex="-1" role="dialog" arialabelledby="modalLoginLabel">
+			<div class="modal-dialog" role="document"> ... <!-- idêntico ao exemplo anterior -->
+				
+			</div> <!-- /.modal-dilog --> 19.
+		</div> <!-- /.modal -->
+
+
+		<script type="text/javascript"> $('button[data-target="#modalLogin"]').on('click', function() {  $('#modalLogin').modal('toggle'); }); $('#modalLogin').on('show.bs.modal', function () { alert('Modal vai ser aberta\nEvento: show.bs.modal'); }); $('#modalLogin').on('shown.bs.modal', function () { alert('Modal foi aberta\nEvento: shown.bs.modal'); }); $('#modalLogin').on('hide.bs.modal', function () { alert('Modal vai ser fechada\nEvento:hide.bs.modal'); }); $('#modalLogin').on('hidden.bs.modal', function () { alert('Modal foi fechada\nEvento:hidden.bs.modal'); }); </script>
+	</div>
+	
+</body>
+</html>
